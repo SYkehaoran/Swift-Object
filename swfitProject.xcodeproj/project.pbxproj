@@ -17,6 +17,8 @@
 		A62A7CC61FC3C1AC00D4B26F /* swfitProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A7CC51FC3C1AC00D4B26F /* swfitProjectTests.swift */; };
 		A62A7CD11FC3C1AC00D4B26F /* swfitProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A7CD01FC3C1AC00D4B26F /* swfitProjectUITests.swift */; };
 		A62A7CDF1FC3C38A00D4B26F /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A7CDE1FC3C38A00D4B26F /* FavoritesList.swift */; };
+		A6337C872010A0F800955AEE /* MNetWorkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6337C862010A0F800955AEE /* MNetWorkHandler.swift */; };
+		A6337C952010B02300955AEE /* MConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6337C942010B02300955AEE /* MConfig.swift */; };
 		A636DC1C1FE798D3007897A7 /* moments.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A636DC1B1FE798D3007897A7 /* moments.mp4 */; };
 		A636DC1E1FE79947007897A7 /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636DC1D1FE79947007897A7 /* VideoSplashViewController.swift */; };
 		A68716EF1FF24CC000F391E7 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68716EE1FF24CC000F391E7 /* MyView.swift */; };
@@ -60,6 +62,8 @@
 		A62A7CD01FC3C1AC00D4B26F /* swfitProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swfitProjectUITests.swift; sourceTree = "<group>"; };
 		A62A7CD21FC3C1AC00D4B26F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A62A7CDE1FC3C38A00D4B26F /* FavoritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesList.swift; sourceTree = "<group>"; };
+		A6337C862010A0F800955AEE /* MNetWorkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNetWorkHandler.swift; sourceTree = "<group>"; };
+		A6337C942010B02300955AEE /* MConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MConfig.swift; sourceTree = "<group>"; };
 		A636DC1B1FE798D3007897A7 /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
 		A636DC1D1FE79947007897A7 /* VideoSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSplashViewController.swift; sourceTree = "<group>"; };
 		A68716EE1FF24CC000F391E7 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
@@ -133,18 +137,16 @@
 		A62A7CAF1FC3C1AC00D4B26F /* swfitProject */ = {
 			isa = PBXGroup;
 			children = (
-				A636DC1B1FE798D3007897A7 /* moments.mp4 */,
-				A6A0FB3F200309D400EA91CA /* New Group */,
-				A62A7CB01FC3C1AC00D4B26F /* AppDelegate.swift */,
+				A6337C882010AC3600955AEE /* AppDelegate */,
+				A6337C892010AC4600955AEE /* Module */,
+				A6337C8A2010AC7F00955AEE /* General */,
+				A6337C8B2010AC8E00955AEE /* External */,
+				A6337C902010AD1E00955AEE /* Expand */,
+				A6337C912010AD2500955AEE /* Resoure */,
 				A62A7CB21FC3C1AC00D4B26F /* ViewController.swift */,
 				A6052B2F1FD78262003E897E /* ocObject.h */,
 				A6052B301FD78262003E897E /* ocObject.m */,
 				A62A7CDE1FC3C38A00D4B26F /* FavoritesList.swift */,
-				A62A7CB41FC3C1AC00D4B26F /* Main.storyboard */,
-				A62A7CB71FC3C1AC00D4B26F /* Assets.xcassets */,
-				A62A7CB91FC3C1AC00D4B26F /* LaunchScreen.storyboard */,
-				A62A7CBC1FC3C1AC00D4B26F /* Info.plist */,
-				A6052B2E1FD78261003E897E /* swfitProject-Bridging-Header.h */,
 				A636DC1D1FE79947007897A7 /* VideoSplashViewController.swift */,
 				A68716EE1FF24CC000F391E7 /* MyView.swift */,
 			);
@@ -169,11 +171,71 @@
 			path = swfitProjectUITests;
 			sourceTree = "<group>";
 		};
-		A6A0FB3F200309D400EA91CA /* New Group */ = {
+		A6337C882010AC3600955AEE /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A62A7CB41FC3C1AC00D4B26F /* Main.storyboard */,
+				A62A7CB91FC3C1AC00D4B26F /* LaunchScreen.storyboard */,
+				A62A7CB01FC3C1AC00D4B26F /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A6337C892010AC4600955AEE /* Module */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "New Group";
+			path = Module;
+			sourceTree = "<group>";
+		};
+		A6337C8A2010AC7F00955AEE /* General */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		A6337C8B2010AC8E00955AEE /* External */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		A6337C902010AD1E00955AEE /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				A6337C922010AF0600955AEE /* Macro */,
+				A679C9642005EAEA00FDF7EB /* NetworkTool */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		A6337C912010AD2500955AEE /* Resoure */ = {
+			isa = PBXGroup;
+			children = (
+				A62A7CBC1FC3C1AC00D4B26F /* Info.plist */,
+				A636DC1B1FE798D3007897A7 /* moments.mp4 */,
+				A62A7CB71FC3C1AC00D4B26F /* Assets.xcassets */,
+			);
+			path = Resoure;
+			sourceTree = "<group>";
+		};
+		A6337C922010AF0600955AEE /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				A6052B2E1FD78261003E897E /* swfitProject-Bridging-Header.h */,
+				A6337C942010B02300955AEE /* MConfig.swift */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		A679C9642005EAEA00FDF7EB /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				A6337C862010A0F800955AEE /* MNetWorkHandler.swift */,
+			);
+			path = NetworkTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +303,7 @@
 		A62A7CA51FC3C1AC00D4B26F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = M;
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "柯浩然";
@@ -426,8 +489,10 @@
 				A68716EF1FF24CC000F391E7 /* MyView.swift in Sources */,
 				A62A7CB31FC3C1AC00D4B26F /* ViewController.swift in Sources */,
 				A62A7CB11FC3C1AC00D4B26F /* AppDelegate.swift in Sources */,
+				A6337C952010B02300955AEE /* MConfig.swift in Sources */,
 				A6052B311FD78262003E897E /* ocObject.m in Sources */,
 				A636DC1E1FE79947007897A7 /* VideoSplashViewController.swift in Sources */,
+				A6337C872010A0F800955AEE /* MNetWorkHandler.swift in Sources */,
 				A62A7CDF1FC3C38A00D4B26F /* FavoritesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,12 +663,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QYA6ERYV5S;
-				INFOPLIST_FILE = swfitProject/Info.plist;
+				INFOPLIST_FILE = swfitProject/Resoure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = www.kehaoran.com.swfitProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "swfitProject/swfitProject-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "swfitProject/Expand/Macro/swfitProject-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -618,11 +683,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QYA6ERYV5S;
-				INFOPLIST_FILE = swfitProject/Info.plist;
+				INFOPLIST_FILE = swfitProject/Resoure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.kehaoran.com.swfitProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "swfitProject/swfitProject-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "swfitProject/Expand/Macro/swfitProject-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

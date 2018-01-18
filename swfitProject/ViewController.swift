@@ -6,7 +6,7 @@
 //  Copyright © 2017年 柯浩然. All rights reserved.
 //
 import UIKit
-
+import Alamofire
 class ViewController: UIViewController {
 
     lazy var tableView : UITableView = {
@@ -22,7 +22,9 @@ class ViewController: UIViewController {
     private var dataSource = [String]()
     private let lyric = "when i was young i'd listen to the radio,waiting for my favorite songs,when they played i'd sing along,it make me smile,those were such happy times and not so long ago,how i wondered where they'd gone,but they're back again just like a long lost friend,all the songs i love so well,every shalala every wo'wo,still shines,every shing-a-ling-a-ling"
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+
         tableView.frame = view.frame
         view.addSubview(tableView)
         self.dataSource = lyric.components(separatedBy: ",")
@@ -40,6 +42,7 @@ class ViewController: UIViewController {
            
         }
     }
+
 }
 extension ViewController:UITableViewDelegate,UITableViewDataSource {
     
@@ -47,10 +50,7 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource {
        return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return self.dataSource.count
-        //test commit
-        //还是不懂
-        //可以成功吗
+       return self.dataSource.count        
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "swiftProject")
